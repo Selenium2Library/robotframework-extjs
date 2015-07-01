@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20150630 17:28:36.609" generator="Robot 2.8.7 (Python 2.7.9 on win32)">
+<suite source="C:\Users\514669\github\robotframework-extjs\test\integration" id="s1" name="Integration">
+<kw type="setup" name="Open Browser To Start Page">
+<doc></doc>
+<arguments>
+</arguments>
+<msg timestamp="20150630 17:28:37.256" level="FAIL">No keyword with name 'Open Browser To Start Page' found.</msg>
+<status status="FAIL" endtime="20150630 17:28:37.256" starttime="20150630 17:28:37.256"></status>
+</kw>
+<suite source="C:\Users\514669\github\robotframework-extjs\test\integration\extjs.robot" id="s1-s1" name="Extjs">
+<test id="s1-s1-t1" name="Accept Store Dialog">
+<doc></doc>
+<tags>
+</tags>
+<status status="FAIL" endtime="20150630 17:28:37.259" critical="yes" starttime="20150630 17:28:37.258">Parent suite setup failed:
+No keyword with name 'Open Browser To Start Page' found.</status>
+</test>
+<doc></doc>
+<metadata>
+</metadata>
+<status status="FAIL" endtime="20150630 17:28:37.262" starttime="20150630 17:28:37.257">Parent suite setup failed:
+No keyword with name 'Open Browser To Start Page' found.</status>
+</suite>
+<kw type="teardown" name="Close All Browsers">
+<doc></doc>
+<arguments>
+</arguments>
+<msg timestamp="20150630 17:28:37.265" level="FAIL">No keyword with name 'Close All Browsers' found.</msg>
+<status status="FAIL" endtime="20150630 17:28:37.265" starttime="20150630 17:28:37.265">No keyword with name 'Close All Browsers' found.</status>
+</kw>
+<doc></doc>
+<metadata>
+</metadata>
+<status status="FAIL" endtime="20150630 17:28:37.265" starttime="20150630 17:28:36.609">Suite setup failed:
+No keyword with name 'Open Browser To Start Page' found.
+
+Also suite teardown failed:
+No keyword with name 'Close All Browsers' found.</status>
+</suite>
+<statistics>
+<total>
+<stat fail="1" pass="0">Critical Tests</stat>
+<stat fail="1" pass="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="1" pass="0" id="s1" name="Integration">Integration</stat>
+<stat fail="1" pass="0" id="s1-s1" name="Extjs">Integration.Extjs</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20150630 17:28:37.253" level="ERROR">Error in file 'C:\Users\514669\github\robotframework-extjs\test\integration': Resource file '..\resource.txt' does not exist.</msg>
+</errors>
+</robot>

@@ -1,4 +1,4 @@
 *** Settings ***
-Resource          ../resource.txt
-Suite Setup       Open Browser To Start Page
-Suite Teardown    Close All Browsers
+Resource  ../resources.robot
+Suite Setup  Open Browser  http://google.com  ${BROWSER}
+Suite Teardown  Close All Browsers

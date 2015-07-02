@@ -2,13 +2,15 @@ from subprocess import call
 from string import Template
 import os
 
+testDir = os.path.dirname(os.path.realpath(__file__))
 pythonPath = Template('--pythonpath ${entry}')
 
 rfexec  = "pybot"
-params  = [
-	pythonPath.substitute(entry="{file}/../src".format(__file__))
-].join(' ')
-tests   = "./test/integration"
+params  = ' '.join([
+	pythonPath.substitute(entry="%s/../src" % testDir),
+	'--outputdir ' + testDir + '/results'
+])
+tests   = testDir + '/integration'
 
 if os.name == 'nt':
 	rfexec += '.bat'

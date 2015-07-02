@@ -1,5 +1,5 @@
 *** Settings ***
-Resource  ../resources.robot
+Resource  resources.robot
 
 *** Variables ***
 ${Cell Editing}=  http://dev.sencha.com/deploy/ext-4.0.1/examples/grid/cell-editing.html

@@ -5,15 +5,15 @@ import os
 testDir = os.path.dirname(os.path.realpath(__file__))
 pythonPath = Template('--pythonpath ${entry}')
 
-rfexec  = "pybot"
-params  = ' '.join([
-	pythonPath.substitute(entry="%s/../src" % testDir),
-	'--outputdir ' + testDir + '/results'
+rfexec = "pybot"
+params = ' '.join([
+    pythonPath.substitute(entry="%s/../src" % testDir),
+    '--outputdir ' + testDir + '/results'
 ])
-tests   = testDir + '/integration'
+tests = testDir + '/integration'
 
 if os.name == 'nt':
-	rfexec += '.bat'
+    rfexec += '.bat'
 
 command = "{0} {1} {2}".format(rfexec, params, tests)
 

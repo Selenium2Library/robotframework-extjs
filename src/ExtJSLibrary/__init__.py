@@ -3,6 +3,7 @@ from robot.utils import timestr_to_secs
 
 import time
 
+
 class ExtJSLibrary:
 
     ROBOT_LIBRARY_SCOPE = 'GLOBAL'
@@ -16,12 +17,13 @@ class ExtJSLibrary:
         return BuiltIn().get_library_instance('Selenium2Library')
 
     def component_query(self, query):
+        query = query.replace("'", "\\'")
         return self._exec_js("""
             var queryResults = window.Ext.ComponentQuery.query('%s');
             if(queryResults.length > 0)
-              return queryResults[0].el.dom
+              return queryResults[0].el.dom;
             else
-              return []
+              return null;
         """ % query)
 
     def dom_query(self, query):
